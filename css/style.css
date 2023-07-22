@@ -155,7 +155,7 @@ nav button {
 header {
     position: relative;
     overflow: hidden;
-    height: 90vh;
+    height: 100vh;
     background: linear-gradient(rgba(2, 2, 2, 0.8),rgba(211, 106, 8, 0.8)), url('images/m_images/undraw_On_the_way_re_swjt.png');
 }
 
@@ -265,12 +265,12 @@ header {
 .favorite {
     background: var(--color-bg);
     text-align: center;
-    border: 1px solid transparent;
+    /* border: 1px solid transparent; */
     transition: var(--transition);
 }
 
 .favorite:hover {
-    background: transparent;
+    /* background: transparent; */
     border-color: var(--color-primary);
 }
 
@@ -288,6 +288,8 @@ header {
     background: var(--color-bg1);
     box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
     padding-bottom: 8rem;
+    background: var(--color-white);
+
 }
 
 .faqs__container {
@@ -309,6 +311,7 @@ header {
 .faq h4 {
     font-size: 1rem;
     line-height: 2.2;
+
 }
 
 .faq__icon {
@@ -530,20 +533,36 @@ footer ul li a:hover {
     }
 
     /* ===== HEADER ===== */
-    .header {
-        height: 200vh;
-    }
 
-    .header__container {
-        display: grid;
-       
-        gap: 5rem;
-        height: 100%;
-    }
+        header {
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            height: 110vh;
+            background: linear-gradient(rgba(2, 2, 2, 0.8),rgba(211, 106, 8, 0.8)), url('images/m_images/undraw_On_the_way_re_swjt.png');
+            
+        }
 
-    .header__left p {
-        margin-bottom: 1.3rem;
-    }
+        .header__container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+            align-items: center;
+            gap: 3rem;
+            height: 100%;
+            padding-top: 40px;
+        }
+        .header__right-image{
+            margin-left: 10px;
+            margin-right: 10px;
+            width: 250px;
+            height: 250px;
+            object-fit: contain;
+        }
+        .header__left p {
+            margin: 1rem 0 2.4rem;   
+        }
+
 
     /* ====== CATEGORIES ====== */
     .categories__right {
